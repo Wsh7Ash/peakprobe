@@ -1,0 +1,15 @@
+peakprobe: demo-pipeline (3 checkpoint(s))
+total peak 36.8 MiB, retained 34.6 MiB
+
+phase               time        peak    retained  top site
+build rows        697.7ms    29.3 MiB    29.3 MiB  <demo>:6 (+29.3 MiB)
+index rows         11.7ms     7.5 MiB     5.0 MiB  <demo>:9 (+5.0 MiB)
+render export     190.6ms     2.4 MiB   226.7 KiB  <demo>:12 (+223.6 KiB)
+
+allocation sites by phase
+  build rows
+    + 29.3 MiB  <demo>:6                                 479479 allocation(s)
+  index rows
+    +  5.0 MiB  <demo>:9                                 3 allocation(s)
+  render export
+    +223.6 KiB  <demo>:12                                1 allocation(s)

@@ -1,0 +1,20 @@
+{'rows': 80000, 'bytes': 168889}
+peakprobe: report-pipeline (4 checkpoint(s))
+total peak 23.9 MiB, retained 22.3 MiB
+
+phase               time        peak    retained  top site
+build rows        380.8ms    19.6 MiB    19.6 MiB  examples/report_pipeline.py:13 (+19.6 MiB)
+index rows         10.9ms     3.8 MiB     2.5 MiB  examples/report_pipeline.py:19 (+2.5 MiB)
+render export     128.8ms     1.8 MiB   171.8 KiB  examples/report_pipeline.py:22 (+165.0 KiB)
+summarise           0.1ms    13.8 KiB     2.3 KiB  examples/report_pipeline.py:25 (+64 B)
+
+allocation sites by phase
+  build rows
+    + 19.6 MiB  examples/report_pipeline.py:13           319485 allocation(s)
+    +    336 B  examples/report_pipeline.py:12           2 allocation(s)
+  index rows
+    +  2.5 MiB  examples/report_pipeline.py:19           2 allocation(s)
+  render export
+    +165.0 KiB  examples/report_pipeline.py:22           1 allocation(s)
+  summarise
+    +     64 B  examples/report_pipeline.py:25           1 allocation(s)
